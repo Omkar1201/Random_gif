@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Random from './component/Random'
 import Taggif from './component/Taggif'
 function App() {

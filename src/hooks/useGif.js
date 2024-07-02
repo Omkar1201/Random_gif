@@ -1,5 +1,5 @@
 // hooks/useGif.js
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 export default function useGif(tag) {
     const randomapi = 'https://api.giphy.com/v1/gifs/random?api_key=5qRGDdbKnul8UrUWf9U58wFJ5jKusJk7&tag=&rating=g';

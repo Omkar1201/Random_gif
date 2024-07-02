@@ -10,10 +10,10 @@ export default function Taggif() {
   return (
     <div className=' flex flex-col'>
 
-      <div className='mydiv bg-white min-h-[45vh] bg-opacity-10 px-2 w-fit min-w-[50%] m-auto flex flex-col items-center'>
+      <div className='mydiv relative bg-white min-h-[20rem] bg-opacity-10 px-2 w-fit min-w-[50%] m-auto flex flex-col items-center '>
         <h2 className='text-white text-xl font-bold my-2'>Random {tag} Gif</h2>
         {dat && spinner ? <Spin /> : <img src={dat} className=' max-w-96 max-h-96 rounded-lg my-4' />}
-         <input type='text' placeholder='type here' className=' w-full m-auto px-2 py-1 rounded-lg' onChange={(event) => settag(event.target.value)} />
+         <input type='text' placeholder='search topic here' className=' w-full absolute bottom-2 m-auto px-2 py-1 rounded-lg' onChange={(event) => settag(event.target.value)} />
       </div>
       <button onClick={()=>fetchapi(tag)} className='text-white mypar items-baseline w-fit mx-auto text-xl bg-teal-600 bg-opacity-50 px-8 my-2 rounded-md py-2'>Generate</button>
     </div>
